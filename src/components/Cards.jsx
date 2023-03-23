@@ -1,26 +1,31 @@
+import React from 'react';
 import Card from './Card';
 import styled from "styled-components";
 
 
 const DivCards = styled.div`
    display: flex;
-   align-items: center;
-   margin-left: 350px;
-   float: left;
+   padding: 5px;
+   margin: auto;
+   justify-content: space-evenly;
+   justify-content: center;
 `;
 
 export default function Cards(props) {
    const { characters } = props;
-   return <DivCards>
+   return ( 
+   <DivCards>
       {characters.map(({id, name, species, image, gender})=>(
          <Card 
+         id = {id}
          key = {id}
          name={name}
           species={species}
           gender={gender}
           image={image}
-          onClose={() => window.alert('Emulamos que se cierra la card')}
+          onClose={() => props.onClose(id)}
           />
       ))}
-   </DivCards>;
+   </DivCards>
+   );
 }

@@ -1,6 +1,8 @@
 body {
-  background-image: url("./34267-espacio.jpg");
+  background-image: url("https://rare-gallery.com/uploads/posts/340156-Rick-and-Morty-Cartoon-Morty-Smith-Rick-Sanchez-Night-Sky-Space-Stars.jpg");
+
    background-attachment: fixed;
+   background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
   margin: 0;
