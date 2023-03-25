@@ -55,7 +55,7 @@ export default function SearchBar(props) {
    const [character, setCharacter] = useState("");
    const handleImputChange = (event) => {
       const {value} = event.target
-      setCharacter(value)
+      setCharacter(value);
    }
 
    return (
