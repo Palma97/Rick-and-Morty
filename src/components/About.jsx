@@ -2,14 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 const ImgCss = styled.img`
-width: 600px;
-height: 600px;
+margin-top: 80px;
+width: 500px;
+height: 500px;
 box-shadow: 0 0 20px rgb(221, 0, 255);
 border-radius: 1.5%;
 `
 const DivCss = styled.div`
 background-color: rgba(7, 7, 7, 0.8);
 margin-right: 100px;
+margin-top: 80px;
 width: 500px;
 height: 450px;
 font-size: 2.5rem;

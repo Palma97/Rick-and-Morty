@@ -20,7 +20,7 @@ justify-content: start;
 background-color: black;
 color: white;
 border-radius: 25%;
-margin-right: 300px;
+margin-right: 150px;
 width: 150px;
 height: 50px;
 align-items: center;
@@ -47,10 +47,17 @@ export default function Nav(props){
          navigate("/about");
       }
 
+      const navigate3 = useNavigate()
+      const favorites = ()=> {
+         navigate3("/favorites");
+      }
+
     return(
        <NavCss>
          <BotonesHomeAbout onClick={botonAbout}>About</BotonesHomeAbout>
          <BotonesHomeAbout onClick={home}>Home</BotonesHomeAbout>
+         <BotonesHomeAbout onClick={favorites}>Favorites</BotonesHomeAbout>
+
          <SearchBar
           onSearch={(characterID) => props.onSearch (characterID)}
           ></SearchBar>

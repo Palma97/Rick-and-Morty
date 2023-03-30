@@ -60,7 +60,7 @@ export default function SearchBar(props) {
 
    return (
       <div>
-      <ButtonSearchCss onClick={()=>props.onSearch(character)}>Agregar</ButtonSearchCss>
+      <ButtonSearchCss type="submit" onClick={()=>props.onSearch(character)}>Agregar</ButtonSearchCss>
          <InputSearchCss type='search' onChange={handleImputChange}/>
       </div>
    );
